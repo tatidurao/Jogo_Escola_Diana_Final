@@ -1,7 +1,7 @@
 //variavel personagens
 var pc, pc_CostaM, pc_DireitaM, pc_EsquerdaM, pc_FrenteM, pc_CostaP, pc_DireitaP, pc_EsquerdaP, pc_FrenteP;
 var nerd, nerdImage;
-
+var canvas
 //variavel botoes
 var buttonMissao1, buttonMissao1Image, buttonMissao2Image,buttonMissao3Image, botaosaladeaula, botaoBiblioteca;
 var backgroundImage0,backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4,backgroundImage5 ;
@@ -43,7 +43,7 @@ function preload() {
   backgroundImage5 = loadImage("./cenas/cena5.jpg");
 
   //jogador principal
-  pc_CostaM=loadAnimation("./menina/menina1.png","./menina/menina2.png", "./menina/menina3.png","/menina/menina4.png")
+  pc_CostaM=loadAnimation("./menina/menina1.png","./menina/menina2.png", "./menina/menina3.png","./menina/menina4.png")
   pc_DireitaM=loadAnimation("./menina/direita_m_1.png","./menina/direita_m_2.png","./menina/direita_m_3.png")
   pc_EsquerdaM=loadAnimation("./menina/esquerda_m_1.png","./menina/esquerda_m_2.png","./menina/esquerda_m_3.png")
   pc_FrenteM=loadAnimation("./menina/menina_frente2.png","./menina/menina_frente3.png","./menina/menina_frente4.png")
@@ -75,10 +75,10 @@ function preload() {
   number0Img = loadImage("./sinalizadores/0.png");
   
   //sons
-  somEstrela=loadSound('/sound/level-up.mp3');
-  somMouseClick=loadSound('/sound/mouseclick.mp3');
-  somFail=loadSound('/sound/fail.mp3');
-  somSucess=loadSound('/sound/sucess.mp3')
+  somEstrela=loadSound('./sound/level-up.mp3');
+  somMouseClick=loadSound('./sound/mouseclick.mp3');
+  somFail=loadSound('./sound/fail.mp3');
+  somSucess=loadSound('./sound/sucess.mp3')
 }
 
 function setup() {
